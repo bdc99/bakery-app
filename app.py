@@ -52,7 +52,7 @@ with tab1:
         c1, c2, c3 = st.columns(3)
         with c1: t0 = st.number_input("Today's Left", min_value=0, key=f"{item}_t0")
         with c2: t1 = st.number_input("Yesterday's", min_value=0, key=f"{item}_t1")
-        with c3: t2 = st.number_input("Tossed (2-Day)", min_value=0, key=f"{item}_t2")
+        with c3: t2 = st.number_input("Discount (2-Day)", min_value=0, key=f"{item}_t2")
         
         # 95% Calculation Logic
         std = BASE_TARGETS.get(item, 10)
