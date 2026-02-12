@@ -44,7 +44,7 @@ with tab1:
         col1, col2, col3 = st.columns(3)
         with col1: t0 = st.number_input(f"{item} (Today)", min_value=0, key=f"{item}_t0")
         with col2: t1 = st.number_input(f"Yesterday's Left", min_value=0, key=f"{item}_t1")
-        with col3: t2 = st.number_input(f"Tossed (2-Day)", min_value=0, key=f"{item}_t2")
+        with col3: t2 = st.number_input(f"Discount (2-Day)", min_value=0, key=f"{item}_t2")
         daily_data.append({"Date": date_str, "Item": item, "T0": t0, "T1": t1, "T2": t2, "Revenue": revenue})
 
     if st.button("Submit Data to Ledger"):
